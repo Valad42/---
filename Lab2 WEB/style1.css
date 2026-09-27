@@ -1,0 +1,14 @@
+
+body {
+    background-color: lightgreen;
+    color: lightblue;
+    font-family: sans-serif;
+}
+
+a {
+    color: darkgreen;
+}
+
+h1, h2 {
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+body {
+    background-color: lightgreen; 
+    font-family: sans-serif;
+}
+
+a {
+    color: darkgreen;
+}
+
+
+.img-left {
+    float: left;
+    width: 30%;
+    margin: 10px;
+}
+
+.img-right {
+    float: right;
+    width: 30%;
+    margin: 10px;
+}
+
+
+.par1 {
+    color: green; 
+    text-decoration: underline; 
+}
+
+.par2 {
+    text-decoration: underline; 
+}
+
+.highlight {
+    font-style: italic; 
+    color: red; 
+}
