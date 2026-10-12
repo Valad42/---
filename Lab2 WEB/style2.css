@@ -23,14 +23,5 @@ a {
 
 .par1 {
     color: green; 
-    text-decoration: underline; 
-}
-
-.par2 {
-    text-decoration: underline; 
-}
-
-.highlight {
-    font-style: italic; 
-    color: red; 
+    
 }
