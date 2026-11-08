@@ -1,0 +1,310 @@
+@import url(reset.css);
+@import url(base.css);
+
+body {
+    background-color: var(--bg-main); 
+    font-family: Arial, sans-serif;
+    color: var(--color-text);
+}
+
+.container {
+    max-width: 1440px; 
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--bg-main);
+    padding: 40px 20px; 
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    color: var(--color-accent);
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.header .subtitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.header .date {
+    font-size: 16px;
+    color: var(--color-accent);
+}
+
+.layout-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.content {
+    flex: 7; 
+}
+
+.sidebar {
+    flex: 3; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menu h2, .additional_section h2 {
+    color: var(--color-accent);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.menu ul li {
+    margin-bottom: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--color-accent);
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+.additional_section {
+    background-color: var(--bg-light);
+    padding: 30px;
+    border-radius: 8px; 
+}
+
+.additional_section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.btn_buy {
+    background-color: green;
+    color: white; 
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn_buy:hover {
+    background-color: #e04a1c;
+}
+
+.content_box {
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px; 
+}
+
+.content_box h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 10px;
+}
+
+.box_inner {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.content_img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 4px; 
+    flex-shrink: 0;
+}
+
+.text_wrap p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.performer_card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.hover_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 90, 40, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: none; 
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.performer_card:hover .hover_text {
+    display: block;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+.gallery_img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+.gallery_img:hover {
+    transform: scale(1.05);
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+.tickets-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.tickets-table th, .tickets-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+.tickets-table th {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+.reviews-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.review-card {
+    flex: 1 1 250px;
+    background: #fff;
+    padding: 15px;
+    border-left: 4px solid var(--color-accent);
+    border-radius: 4px;
+    font-style: italic;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.review-card footer {
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-section details {
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+}
+.faq-section summary {
+    font-weight: bold;
+    color: var(--color-accent);
+}
+.faq-section p {
+    margin-top: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    margin-top: 40px;
+}
+
+
+@media (max-width: 1023px) {
+    .layout-wrapper {
+        flex-direction: column;
+    }
+    .content, .sidebar {
+        width: 100%;
+        flex: none;
+    }
+    .sidebar {
+        flex-direction: row; 
+        flex-wrap: wrap;
+    }
+    .menu, .additional_section {
+        flex: 1 1 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 20px 10px;
+    }
+    .header h1 {
+        font-size: 28px;
+    }
+    .box_inner.flex-responsive {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .content_img, .performer_card {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+    .sidebar {
+        flex-direction: column; 
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr; 
+    }
+}

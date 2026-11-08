@@ -89,8 +89,8 @@ body {
 }
 
 .btn_buy {
-    background-color: var(--color-accent);
-    color: white;
+    background-color: green;
+    color: black;
     border: none;
     padding: 12px 20px;
     font-size: 16px;
